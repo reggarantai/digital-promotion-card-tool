@@ -46,7 +46,7 @@ function setPostcard(file){
 
         var ul = text.upperLeft;
 
-        watermark([dataUrl,'assets/images/blank-postcard.png'])
+        watermark([dataUrl,'assets/images/card-template.png'])
         .dataUrl(watermark.image.center(1))
         .render()
         .dataUrl(watermark.text.atPos(x, y, text, 'bold 40px Roboto', '#ffffff', 1))
