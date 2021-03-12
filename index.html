@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Membuat digital postcard on the fly</title>
+    <!-- Pointer events polyfill untuk old browsers, lihat https://caniuse.com/#feat=pointer -->
+    <script src="https://unpkg.com/elm-pep"></script>
+    <!-- Hanya dibutuhkan untuk browser seperti Internet Explorer dan Android 4.x -->
+    <script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=fetch,requestAnimationFrame,Element.prototype.classList,URL,TextDecoder"></script>
+    <!-- Style Bootstrap 4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <br/>
+          <h1>Digital postcard</h1>
+          <br/>
+
+          <div id="wrapper">
+            <form action="" id="uploadForm" method="POST">
+              <div class="form-group form-group-lg">
+                <label>Nama barang atau project:</label>
+                <input type="text" id="text" placeholder="Masukkan nama barang atau project disini&hellip;" class="form-control"/>
+              </div>
+              <div class="form-group form-group-lg">
+                <label>Nama anda:</label>
+                <input type="text" id="name" placeholder="Masukkan nama anda disini&hellip;" class="form-control"/>
+              </div>
+              <div class="input-group">
+                <span class="input-group-btn">
+                  <span class="btn btn-primary btn-file">
+                    <span>Unggah gambar disini&hellip;</span>
+                    <input type="file" id="target" class="form-control">
+                  </span>
+                </span>
+              </div>
+            </form>
+
+            <!-- ini untuk menampilkan hasil sebelum di unduh -->
+            <div id="preview"></div>
+
+            <!-- untuk menampilkan tombol unduh setelah proses selesai -->
+            <div id="dl"></div>
+          </div>
+
+          <br/>
+          ___<br/>
+          <small><a href="https://regga.id/coding/">Regga @reggarantai &raquo;</a></small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script dari https://brianium.github.io/watermarkjs/ -->
+    <script src="assets/js/vendor/watermark.min.js"></script>
+    <!-- Script -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
