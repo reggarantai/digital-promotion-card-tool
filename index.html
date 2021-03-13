@@ -27,34 +27,45 @@
 
           <div id="wrapper">
             <form action="" id="uploadForm" method="POST">
-              <div class="form-group form-group-lg">
-                <label>Nama barang atau project:</label>
-                <input type="text" id="text" placeholder="Masukkan nama barang atau project disini&hellip;" class="form-control"/>
-              </div>
-              <div class="form-group form-group-lg">
-                <label>Nama anda:</label>
-                <input type="text" id="name" placeholder="Masukkan nama anda disini&hellip;" class="form-control"/>
-              </div>
-              <div class="input-group">
-                <span class="input-group-btn">
-                  <span class="btn btn-primary btn-file">
-                    <span>Unggah gambar disini&hellip;</span>
-                    <input type="file" id="target" class="form-control">
-                  </span>
-                </span>
-              </div>
-            </form>
+	            <div class="form-group">
+	              <label>Nama barang atau project:</label>
+	              <input type="text" id="text" placeholder="Masukkan nama barang atau project disini&hellip;" class="form-control"/>
+	            </div>
+	            <div class="form-group">
+	              <label>Nama anda:</label>
+	              <input type="text" id="name" placeholder="Masukkan nama anda disini&hellip;" class="form-control"/>
+	            </div>
+							<div class="form-group">
+	              <label style="display:block">Warna tulisan:</label>
+								<div class="form-check form-check-inline ">
+									<input class="form-check-input" type="radio" id="color" name="radio" value="Putih" checked="checked">
+	  							<label class="form-check-label" for="color">Putih</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" id="color2" name="radio" value="Hitam">
+	  							<label class="form-check-label" for="color2">Hitam</label>
+								</div>
+	            </div>
+	            <div class="input-group">
+	              <span class="input-group-btn">
+	                <span class="btn btn-primary btn-file">
+	                  <span>Unggah gambar disini&hellip;</span>
+	                  <input type="file" id="target" class="form-control">
+	                </span>
+	              </span>
+	            </div>
+	          </form>
 
             <!-- ini untuk menampilkan hasil sebelum di unduh -->
             <div id="preview"></div>
 
             <!-- untuk menampilkan tombol unduh setelah proses selesai -->
-            <div id="dl"></div>
+            <div id="dl-dcard"></div>
           </div>
 
           <br/>
           ___<br/>
-          <small><a href="https://regga.id/coding/">Regga @reggarantai &raquo;</a></small>
+          <small><a href="https://reggarantai.com/">Regga @reggarantai &raquo;</a></small>
         </div>
       </div>
     </div>
